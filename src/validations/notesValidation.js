@@ -71,9 +71,9 @@ export const updateNoteSchema = {
     }),
     tag: Joi.string()
       .valid(...TAGS)
-      .min(1)
       .messages({
         'any.only': `Tag must be one of: ${TAGS}`,
-      }),
+      })
+      .min(1),
   }),
 };
