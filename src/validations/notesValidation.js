@@ -73,7 +73,6 @@ export const updateNoteSchema = {
       .valid(...TAGS)
       .messages({
         'any.only': `Tag must be one of: ${TAGS}`,
-      })
-      .min(1),
-  }),
+      }),
+  }).min(1),
 };
