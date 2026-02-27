@@ -27,9 +27,6 @@ export const getAllNotes = async (req, res) => {
     totalPages,
     notes,
   });
-
-  // const notes = await Note.find();
-  // return res.status(200).json(notes);
 };
 
 export const getNoteById = async (req, res) => {
